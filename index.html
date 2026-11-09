@@ -1,19 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <form charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Módulos DAW</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: square;
+            margin-bottom: 20px;
+        }
+        .btn-php {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
 <body>
-    <h1>Modulos de Desarrollo de Aplicaciones Web</h1>
+    <h1>Módulos de Desarrollo de Aplicaciones Web</h1>
     <ul>
-    <li>Despliegue de aplicaciones</li>
-	<li>Desarrollo Web en Entorno Servidor</li>
-   	<li>Sotenibilidad</li>
-	<li>Disenyo interfaces</li>
-    <li>Base de datos</li>
-    <li>Lenguaje de marcas</li>
- </ul>
+        <li>Despliegue de aplicaciones</li>
+        <li>Desarrollo Web en Entorno Servidor</li>
+        <li>Sostenibilidad</li>
+        <li>Diseño de interfaces</li>
+        <li>Base de datos</li>
+        <li>Lenguaje de marcas</li>
+    </ul>
+
+    <div><h2>Boton con efecto JavaScript al pasar por encima</h2></div>
+    <a href="contar.php">
+        <button id="miBoton" class="btn-php">Ir a PHP (Contar hasta 10)</button>
+    </a>
+
+    <script>
+        const boton = document.getElementById('miBoton');
+
+       
+        boton.addEventListener('mouseenter', () => {
+            boton.style.backgroundColor = '#e74c3c'; 
+        });
+
+        
+        boton.addEventListener('mouseleave', () => {
+            boton.style.backgroundColor = '#3498db'; 
+        });
+    </script>
 </body>
 </html>
+
